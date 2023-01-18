@@ -24,8 +24,8 @@
 <body>
 
     <?php
-    
-    $root = simplexml_load_file("data.xml") or die("Error: Cannot create object");
+
+    require('db.php');
     
     foreach ($root->children() as $node) {
     ?>
